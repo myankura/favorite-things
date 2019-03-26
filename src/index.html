@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles/main.css">
-    <title>Application Title</title>
-  </head>
-  <body>
+<html lang="en">
 
-    <div id="display-container"></div>
-  
-    <script src="./scripts/main.js"></script>
-  </body>
-  </html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Favorite Things</title>
+</head>
+
+<body>
+
+  <fieldset>
+    <label for="thing">Thing</label>
+    <input type="text" id="thing" placeholder="Enter your favorite thing" autofocus />
+  </fieldset>
+  <fieldset>
+    <label for="location">Location</label>
+    <input type="text" id="location" placeholder="Location where thing can be found" />
+  </fieldset>
+  <button id="saveEntry">Save That Thing</button>
+  <!-- <article id="addressList"> </article> -->
+  <article id="thing-container"></article>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>
