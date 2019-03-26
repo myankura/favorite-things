@@ -19,16 +19,13 @@ document.querySelector("#saveEntry").addEventListener("click", event => {
         Collect the user put by selecting the input fields, one
         at a time, and accessing the `value` property
     */
-    const thingName = document.querySelector("#thing").value
-    const thingLocation = document.querySelector("#location").value
+    const thing = document.querySelector("#thing").value
+    const location = document.querySelector("#location").value
 
     // Once you have collected all the values, update the DOM
     // with some HTML
     thingContainer.innerHTML += `
-        <section>
-            <h1>${thingName}</h1>
-            <div>${thingLocation}</div>
-        </section>
+        <p>I can buy ${thing} at ${location}</p>
     `
 
 })
